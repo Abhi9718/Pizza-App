@@ -1,0 +1,16 @@
+<p>register works!</p>
+
+<form [formGroup]="userForm" (ngSubmit)="register()">
+  <div>Name:<input type="text" formControlName="employeeName" /></div>
+  <br />
+  <div>Email:<input type="email" formControlName="email" /></div>
+  <br />
+  <div>Password:<input type="password" formControlName="password" /></div>
+  <br />
+  <!-- <div>Confirm Number:<input type="text" formControlName="mobileNo" /></div> -->
+  <br />
+  <!-- <div>Address:<input type="text" formControlName="address" /></div> -->
+  <br />
+
+  <button>Register</button>
+</form>

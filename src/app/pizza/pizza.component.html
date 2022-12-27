@@ -1,0 +1,19 @@
+<p>pizza works!</p>
+
+<!-- <button>Order</button> -->
+
+<div><button (click)="log()">logout</button></div>
+<div style="font-size: 100px; background-color: aqua">MENU OF PIZZAS</div>
+<div *ngFor="let p of store">
+  {{ p | json }}
+  <button (click)="save(p)">Order</button>
+</div>
+
+******************************************************************************************
+
+<div *ngFor="let s of pizza">
+  <br />
+  Here are your Order details: {{ s | json }}
+  <button (click)="confirm()">Confirm Order</button>
+  <button (click)="remove(s.pizzaName)">Delete Order</button>
+</div>
